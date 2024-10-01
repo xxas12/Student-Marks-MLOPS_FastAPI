@@ -6,6 +6,7 @@ This project include 4 files in total, 3 notebook files and 1 csv file those fil
 * model building.ipynd
 * api.ipynd
 * student marks.csv
+* app.ipynd
 
 ## Data Analysis:
 After doing some analysis we have found out that their is no need of data cleannig becuase there are no missing value in the provided data set, later on we found out there is huge corelation between the Marks column and time column and there not so much outlier in the given data.There is no need of feature engineering or any type of encoding. 
@@ -22,3 +23,7 @@ Check: model_building.ipynd
 ## MLOPS
 For MLOPS we have used FastAPI with ngrok for secure end to end point for mlops for now only which takes two input float and int if the marks are not below 50 'you pass' message will be output otherwise 'you shall not pass'. 
 Check: api.ipynd
+
+## ML Interface
+For the interface we used gradio it takes total two inputs from the user number of courses and time you have studied per day (Hours)
+if you studied for 16 hours for 2 courses it will say you shall not pass because a limit is set to the if statement if marks less than 35 than you shall not pass with marks shown.
